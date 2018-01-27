@@ -20,7 +20,7 @@ public class RpcZooKeeperConfig {
     @Bean
     public ServiceRegistry serviceRegistry() {
         System.out.println(1);
-        ServiceRegistry serviceRegistry = new ServiceRegistry("120.25.94.89:2181");
+        ServiceRegistry serviceRegistry = new ServiceRegistry("127.0.0.1:2181");
         return serviceRegistry;
     }
 
@@ -31,7 +31,7 @@ public class RpcZooKeeperConfig {
     @DependsOn("serviceRegistry")
     public ServiceDiscovery serviceDiscovery() {
         System.out.println(2);
-        ServiceDiscovery serviceDiscovery = new ServiceDiscovery("120.25.94.89:2181");
+        ServiceDiscovery serviceDiscovery = new ServiceDiscovery("127.0.0.1:2181");
         return serviceDiscovery;
     }
 }

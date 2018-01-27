@@ -8,7 +8,6 @@ import com.hunger.service.CalculateService;
  */
 public class CalculateServiceImpl implements CalculateService {
 
-
     @Override
     public int add(int a, int b) {
         return a+b;

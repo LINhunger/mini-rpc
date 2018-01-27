@@ -13,16 +13,13 @@ public class EventBusTest {
 
     @Test
     public void test01() throws Exception{
-        ClientReconnectListener reconnectListener = new ClientReconnectListener("service");
         ClientStopEventListener stopEventListener =ClientStopEventListener.getInstance();
-        eventBus.register(reconnectListener);
         eventBus.register(stopEventListener);
         for (int i=0; i<1000;i++) {
             new Thread(new Runner()).start();
         }
         Thread.sleep(1000);
 //        eventBus.post(new DecrEvent("127.0.0.1"));
-//        eventBus.post(new ClientReconnectEvent());
     }
 
     private class Runner implements Runnable{

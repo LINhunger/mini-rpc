@@ -1,9 +1,8 @@
 package com.hunger.rpc.netty.client;
 
-import com.google.common.util.concurrent.*;
+
 import com.hunger.config.RpcConfig;
 import com.hunger.rpc.netty.client.handler.MessageSendHandler;
-import com.hunger.rpc.parallel.ThreadPoolExecutorFactory;
 import com.hunger.rpc.serialize.RpcSerializeProtocol;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
