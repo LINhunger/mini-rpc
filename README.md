@@ -4,9 +4,8 @@
 
 ## 参考
 
-[tang-jie/NettyRPC]: https://github.com/tang-jie/NettyRPC
-
-[luxiaoxun/NettyRpc]: https://github.com/luxiaoxun/NettyRpc
+- tang-jie/NettyRPC ： https://github.com/tang-jie/NettyRPC 
+- luxiaoxun/NettyRpc：https://github.com/luxiaoxun/NettyRpc
 
 ## 简介
 
